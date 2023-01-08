@@ -1,3 +1,4 @@
 mkdir day$1 
 cd day$1
-touch in.txt part1.py test_in.txt
+mkdir input
+touch input/in1.txt input/in2.txt part1.py
