@@ -1,5 +1,6 @@
 import java.io.File
 
+// this does not change when input line changes
 var enabled = true
 
 fun computeInstr(instr: String): Int {
@@ -33,7 +34,7 @@ fun scanMemAdv(mem: String): Int {
 fun main() {
     val memArr = File("./2024/03/in.txt").readLines()
     // part 1
-//    println(memArr.sumOf { scanMem(it) })
+    println(memArr.sumOf { scanMem(it) })
     // part 2
     println(memArr.sumOf { scanMemAdv(it) })
 }
